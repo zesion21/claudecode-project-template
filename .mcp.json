@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "docx-mcp": {
+      "command": "uvx",
+      "args": ["docx-mcp"]
+    },
+    "ragflow": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "D:\\ragflow-mcp",
+        "python",
+        "-m",
+        "src.server"
+      ],
+      "env": {
+        "RAGFLOW_API_KEY": "ragflow-T7mxvEujcg4qG14tMcnbnqbtI_RnOCy_16UiZq-3Y-I",
+        "RAGFLOW_URL": "http://192.168.10.13:9380/api/v1"
+      }
+    },
+    "pdf-reader": {
+      "command": "npx",
+      "args": ["-y", "@sylphx/pdf-reader-mcp"]
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    },
+    "excel": {
+      "command": "npx",
+      "args": ["-y", "excel-mcp-server"]
+    },
+    "web-browsing-mcp": {
+      "command": "npx",
+      "args": ["-y", "@leonardocerv/web-browsing-mcp"]
+    }
+  }
+}
